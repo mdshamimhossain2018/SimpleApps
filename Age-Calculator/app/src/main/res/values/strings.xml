@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Age Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_exit">Exit</string>
+    <string name="action_home">About me</string>
+    <string name="shamim">Md: Shamim Hossaon Sagor\nB.Sc in CSE at Uttara University\n\n\nE-mail:shamimh529@gmail.com\n\nFacebook:https://www.facebook.com/shamim.raja.73</string>
+</resources>

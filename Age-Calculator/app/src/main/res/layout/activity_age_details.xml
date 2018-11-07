@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3E5F5"
+    android:orientation="vertical"
+    tools:context="com.example.my_pc.agecalculator.activity.AgeDetailsActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/showYearsId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#9C27B0"
+                android:paddingBottom="10sp"
+                android:paddingTop="10sp"
+                android:text="Your Age"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TableRow
+                    android:id="@+id/showAge"
+                    android:background="#FF8A80"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_weight="1"
+                        android:paddingBottom="10sp"
+                        android:paddingTop="10sp"
+                        android:background="@drawable/table_shape"
+                        android:text="Years"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="25sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_shape"
+                        android:paddingBottom="10sp"
+                        android:paddingTop="10sp"
+                        android:text="Months"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="25sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="10sp"
+                        android:paddingTop="10sp"
+                        android:background="@drawable/table_shape"
+                        android:text="Days"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="25sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/showAgeDetails"
+                    android:background="#F3E5F5"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/yearsId"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_weight="1"
+                        android:paddingBottom="10sp"
+                        android:paddingTop="10sp"
+                        android:text="Years"
+                        android:background="@drawable/table_shape"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="25sp">
+
+                    </TextView>
+
+
+                    <TextView
+                        android:id="@+id/monthId"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_shape"
+                        android:paddingBottom="10sp"
+                        android:paddingTop="10sp"
+                        android:text="Months"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="25sp">
+
+                    </TextView>
+
+
+                    <TextView
+                        android:id="@+id/daysId"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="10sp"
+                        android:paddingTop="10sp"
+                        android:background="@drawable/table_shape"
+                        android:text="Days"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="25sp">
+
+                    </TextView>
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40sp"
+                android:background="#9C27B0"
+                android:paddingBottom="10sp"
+                android:paddingTop="10sp"
+                android:text="Details"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20sp">
+
+                <TableRow
+                    android:id="@+id/row1"
+                    android:background="#F3E5F5"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_shape"
+                        android:paddingBottom="7sp"
+                        android:paddingTop="7sp"
+                        android:text="Total Years : "
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/showTotalYears"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="7sp"
+                        android:paddingTop="7sp"
+                        android:text="Years"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/row2"
+                    android:background="#F3E5F5"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_shape"
+                        android:paddingBottom="7sp"
+                        android:paddingTop="7sp"
+                        android:text="Total Months : "
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/showTotalMonths"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_shape"
+                        android:paddingBottom="7sp"
+                        android:paddingTop="7sp"
+                        android:text="Months"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/row3"
+                    android:background="#F3E5F5"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_shape"
+                        android:paddingBottom="7sp"
+                        android:paddingTop="7sp"
+                        android:text="Total Weeks : "
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/showTotalWeeks"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_shape"
+                        android:paddingBottom="7sp"
+                        android:paddingTop="7sp"
+                        android:text="Weeks"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/row4"
+                    android:background="#F3E5F5"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_shape"
+                        android:paddingBottom="7sp"
+                        android:paddingTop="7sp"
+                        android:text="Total Days : "
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/showTotalDays"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="7sp"
+                        android:paddingTop="7sp"
+                        android:background="@drawable/table_shape"
+                        android:text="Days"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/row5"
+                    android:background="#F3E5F5"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_shape"
+                        android:paddingBottom="7sp"
+                        android:paddingTop="7sp"
+                        android:text="Total Hours : "
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/showTotalHours"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="7sp"
+                        android:paddingTop="7sp"
+                        android:background="@drawable/table_shape"
+                        android:text="Years"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/row6"
+                    android:background="#F3E5F5"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_shape"
+                        android:paddingBottom="7sp"
+                        android:paddingTop="7sp"
+                        android:text="Total Minutes : "
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/showTotalMinutes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="7sp"
+                        android:paddingTop="7sp"
+                        android:background="@drawable/table_shape"
+                        android:text="Munites"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/row7"
+                    android:background="#F3E5F5"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_shape"
+                        android:paddingBottom="7sp"
+                        android:paddingTop="7sp"
+                        android:text="Total Seconds : "
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/showTotalSeconds"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="7sp"
+                        android:paddingTop="7sp"
+                        android:text="Seconds"
+                        android:background="@drawable/table_shape"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
